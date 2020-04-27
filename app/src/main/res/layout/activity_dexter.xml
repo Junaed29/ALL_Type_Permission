@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DexterPermission.Dexter_Activity">
+
+    <TextView
+        android:textColor="@color/unknown"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:id="@+id/cameraTextId"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Unknown"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/storageTextId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cameraButtonId"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+
+        android:id="@+id/cameraButtonId"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="cameraPermission"
+        android:text="Camera Permission"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/strogeButtonId"
+        app:layout_constraintEnd_toStartOf="@+id/cameraTextId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/strogeButtonId"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="storagePermission"
+        android:text="Storage Permission"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/contactButtonId"
+        app:layout_constraintEnd_toStartOf="@+id/storageTextId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cameraButtonId" />
+
+    <Button
+        android:id="@+id/contactButtonId"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="contactPermission"
+        android:text="Contact Permission"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/allRequestButtonId"
+        app:layout_constraintEnd_toStartOf="@+id/contactTextId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/strogeButtonId" />
+
+    <TextView
+        android:textColor="@color/unknown"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:id="@+id/storageTextId"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Unknown"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/contactTextId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/strogeButtonId"
+        app:layout_constraintTop_toBottomOf="@+id/cameraTextId" />
+
+    <Button
+        android:id="@+id/allRequestButtonId"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:onClick="AllPermission"
+        android:text="All Request \n(Dexter)"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:textColor="@color/unknown"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:id="@+id/contactTextId"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Unknown"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/allRequestButtonId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/contactButtonId"
+        app:layout_constraintTop_toBottomOf="@+id/storageTextId" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

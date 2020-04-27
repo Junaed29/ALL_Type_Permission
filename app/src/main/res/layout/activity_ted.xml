@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TedPermission.Ted_Activity">
+
+    <TextView
+        android:id="@+id/cameraTedTextId"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Unknown"
+        android:textAlignment="center"
+        android:textColor="@color/unknown"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/storageTedTextId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cameraTedButtonId"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+
+        android:id="@+id/cameraTedButtonId"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="cameraPermission"
+        android:text="Camera Permission"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/strogeTedButtonId"
+        app:layout_constraintEnd_toStartOf="@+id/cameraTedTextId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/strogeTedButtonId"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="storagePermission"
+        android:text="Storage Permission"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/contactTedButtonId"
+        app:layout_constraintEnd_toStartOf="@+id/storageTedTextId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cameraTedButtonId" />
+
+    <Button
+        android:id="@+id/contactTedButtonId"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="contactPermission"
+        android:text="Contact Permission"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/allTedRequestButtonId"
+        app:layout_constraintEnd_toStartOf="@+id/contactTedTextId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/strogeTedButtonId" />
+
+    <TextView
+        android:id="@+id/storageTedTextId"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Unknown"
+        android:textAlignment="center"
+        android:textColor="@color/unknown"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/contactTedTextId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/strogeTedButtonId"
+        app:layout_constraintTop_toBottomOf="@+id/cameraTedTextId" />
+
+    <Button
+        android:id="@+id/allTedRequestButtonId"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:onClick="AllPermission"
+        android:text="All Request \n(Ted)"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactTedButtonId" />
+
+    <TextView
+        android:id="@+id/contactTedTextId"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Unknown"
+        android:textAlignment="center"
+        android:textColor="@color/unknown"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/allTedRequestButtonId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/contactTedButtonId"
+        app:layout_constraintTop_toBottomOf="@+id/storageTedTextId" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
